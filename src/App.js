@@ -1,23 +1,20 @@
 import './App.css';
 import React from 'react';
+import Navbar from './Components/navbar';
+import Card from './Components/card';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <div className='container'>
+        <h1>Cosa desideri odrinare?</h1>
+        <hr />
+        <div className='row'>
+          <Card />
+        </div>
+      </div>
+    </>
   );
 }
 
